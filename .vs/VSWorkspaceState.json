@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\backend",
+    "\\backend\\WebAPI",
+    "\\backend\\WebAPI\\WebAPI",
+    "\\backend\\WebAPI\\WebAPI\\Helpers"
+  ],
+  "SelectedNode": "\\backend\\WebAPI\\WebAPI\\Helpers\\JwtHelper.cs",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/csl_recent_message"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="2dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="yyyy/mm/dd"
+        android:textSize="16dp"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_message"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/csl_user_image_holder"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/img_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@drawable/circle"
+                android:src="@drawable/ic_add_photo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <!--<ImageView
+                android:id="@+id/img_status"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="5dp"
+                android:background="@drawable/circle"
+                android:backgroundTint="@color/msgs_background"
+                android:foreground="@drawable/ic_offline"
+                android:foregroundTint="@color/msgs_unavailable"
+                />-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/csl_message_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="45dp"
+                android:background="@drawable/rounded_message_middle"
+                android:backgroundTint="@color/msgs_background"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/tv_message"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/img_seen"
+                    android:layout_width="18dp"
+                    android:layout_weight="0"
+                    android:layout_height="18dp"
+                    android:background="@drawable/ic_message_seen"
+                    android:backgroundTint="@color/white"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    />
+            </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

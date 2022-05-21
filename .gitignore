@@ -1,0 +1,9 @@
+backend/WebAPI/.vs/
+backend/WebAPI/WebAPI/bin/
+backend/WebAPI/WebAPI/obj/
+backend/WebAPI/WebAPI/Migrations/
+backend/WebAPI/WebAPI/SkuciSe.db
+frontend/.idea/misc.xml
+backend/WebAPI/WebAPI/Files/
+frontend/.idea/deploymentTargetDropDown.xml
+frontend/.idea/gradle.xml

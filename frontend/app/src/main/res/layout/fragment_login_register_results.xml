@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:padding="16dp"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:id="@+id/tv_info_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Info text"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_info_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btn_info_positive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style1"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:text="Positive"
+            android:textColor="@color/black"
+            android:layout_margin="8dp"
+            app:backgroundTint="@color/transparent_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_info_negative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_style1"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:text="Negative"
+            android:textColor="@color/black"
+            android:layout_margin="8dp"
+            app:backgroundTint="@color/transparent_white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

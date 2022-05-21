@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/csl_advert_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vpg_advert_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_style_10"
+        android:minHeight="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_add_to_favourites"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/shape_btn_circle_white"
+        android:elevation="5dp"
+        android:src="@drawable/ic_favourites_star_gray_32"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/vpg_advert_images"
+        app:layout_constraintTop_toTopOf="@+id/vpg_advert_images" />
+
+    <ImageButton
+        android:id="@+id/btn_edit_my_advert"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/shape_btn_circle_white"
+        android:elevation="5dp"
+        android:src="@drawable/ic_baseline_edit_32"
+        app:layout_constraintEnd_toEndOf="@+id/vpg_advert_images"
+        app:layout_constraintTop_toTopOf="@+id/vpg_advert_images" />
+
+    <ImageButton
+        android:id="@+id/btn_delete_my_advert"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/shape_btn_circle_white"
+        android:elevation="5dp"
+        android:src="@drawable/ic_baseline_delete_outline_32"
+        app:layout_constraintEnd_toStartOf="@+id/btn_edit_my_advert"
+        app:layout_constraintTop_toTopOf="@+id/vpg_advert_images" />
+
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/indicator_vpg"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/vpg_advert_images"
+        app:layout_constraintEnd_toEndOf="@+id/vpg_advert_images"
+        app:layout_constraintStart_toStartOf="@+id/vpg_advert_images" />
+
+    <TextView
+        android:id="@+id/tv_advert_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Image title"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vpg_advert_images" />
+
+    <TextView
+        android:id="@+id/tv_advert_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Date created"
+        app:layout_constraintEnd_toStartOf="@+id/tv_advert_type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_advert_title" />
+
+    <TextView
+        android:id="@+id/tv_advert_residence_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="House"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_advert_title" />
+
+    <TextView
+        android:id="@+id/tv_advert_city"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="City name"
+        app:layout_constraintEnd_toStartOf="@+id/tv_advert_type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_advert_date" />
+
+    <TextView
+        android:id="@+id/tv_advert_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_advert_date" />
+
+    <TextView
+        android:id="@+id/tv_advert_size"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Size"
+        app:layout_constraintEnd_toStartOf="@+id/tv_advert_price"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_advert_city" />
+
+    <TextView
+        android:id="@+id/tv_advert_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_advert_type" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

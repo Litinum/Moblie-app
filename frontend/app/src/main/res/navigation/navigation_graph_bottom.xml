@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph_bottom"
+    app:startDestination="@id/frontPageFragment">
+
+    <fragment
+        android:id="@+id/frontPageFragment"
+        android:name="com.example.skucise.fragments.FrontPageFragment"
+        android:label="FrontPageFragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.skucise.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.example.skucise.fragments.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.skucise.fragments.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/myAccountFragment"
+        android:name="com.example.skucise.fragments.MyAccountFragment"
+        android:label="fragment_my_account"
+        tools:layout="@layout/fragment_my_account" />
+    <fragment
+        android:id="@+id/myAdvertsFragment"
+        android:name="com.example.skucise.fragments.MyAdvertsFragment"
+        android:label="fragment_my_adverts"
+        tools:layout="@layout/fragment_my_adverts" />
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.skucise.fragments.CalendarFragment"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar" />
+    <fragment
+        android:id="@+id/advertFragment"
+        android:name="com.example.skucise.fragments.AdvertFragment"
+        android:label="fragment_advert"
+        tools:layout="@layout/fragment_advert" />
+    <fragment
+        android:id="@+id/addAdvertFragment"
+        android:name="com.example.skucise.fragments.AddAdvertFragment"
+        android:label="fragment_add_advert"
+        tools:layout="@layout/fragment_add_advert" />
+    <fragment
+        android:id="@+id/chatWithUserFragment"
+        android:name="com.example.skucise.fragments.ChatWithUserFragment"
+        android:label="fragment_chat_with_user"
+        tools:layout="@layout/fragment_chat_with_user" />
+    <fragment
+        android:id="@+id/editAdvertFragment"
+        android:name="com.example.skucise.fragments.EditAdvertFragment"
+        android:label="fragment_edit_advert"
+        tools:layout="@layout/fragment_edit_advert" />
+
+</navigation>

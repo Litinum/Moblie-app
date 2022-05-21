@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SkućiSe</string>
+    <string name="username_hint2">Korisničko ime ili email…</string>
+    <string name="username_hint">Korisničko ime…</string>
+    <string name="forgot_password">Zaboravili ste lozinku?</string>
+    <string name="password_string">Lozinka…</string>
+    <string name="password2_string">Ponovi lozinku…</string>
+    <string name="login_string">Prijavi se</string>
+    <string name="register_string">Registruj se</string>
+    <string name="name_string">Ime…</string>
+    <string name="last_name_string">Prezime…</string>
+    <string name="email_string">Email adresa…</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="meeting_message">Sastanak zakazan za <u id="@+id/link_meeting_advert">oglas</u>, održaće se u <b id="@+id/meeting_time">PLACEHOLDER</b>.</string>
+</resources>
